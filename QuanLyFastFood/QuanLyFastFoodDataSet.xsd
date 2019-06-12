@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanLyFastFoodDataSet" targetNamespace="http://tempuri.org/QuanLyFastFoodDataSet.xsd" xmlns:mstns="http://tempuri.org/QuanLyFastFoodDataSet.xsd" xmlns="http://tempuri.org/QuanLyFastFoodDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyFastFoodConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyFastFoodConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyFastFood.Properties.Settings.GlobalReference.Default.QuanLyFastFoodConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_DS_PhanManhTableAdapter" GeneratorDataComponentClassName="V_DS_PhanManhTableAdapter" Name="V_DS_PhanManh" UserDataComponentName="V_DS_PhanManhTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyFastFoodConnectionString (Settings)" DbObjectName="QuanLyFastFood.dbo.V_DS_PhanManh" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenCN, TenServer FROM dbo.V_DS_PhanManh</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenCN" DataSetColumn="TenCN" />
+              <Mapping SourceColumn="TenServer" DataSetColumn="TenServer" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanLyFastFoodDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QuanLyFastFoodDataSet" msprop:Generator_UserDSName="QuanLyFastFoodDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_DS_PhanManh" msprop:Generator_TableClassName="V_DS_PhanManhDataTable" msprop:Generator_TableVarName="tableV_DS_PhanManh" msprop:Generator_TablePropName="V_DS_PhanManh" msprop:Generator_RowDeletingName="V_DS_PhanManhRowDeleting" msprop:Generator_RowChangingName="V_DS_PhanManhRowChanging" msprop:Generator_RowEvHandlerName="V_DS_PhanManhRowChangeEventHandler" msprop:Generator_RowDeletedName="V_DS_PhanManhRowDeleted" msprop:Generator_UserTableName="V_DS_PhanManh" msprop:Generator_RowChangedName="V_DS_PhanManhRowChanged" msprop:Generator_RowEvArgName="V_DS_PhanManhRowChangeEvent" msprop:Generator_RowClassName="V_DS_PhanManhRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenCN" msprop:Generator_ColumnVarNameInTable="columnTenCN" msprop:Generator_ColumnPropNameInRow="TenCN" msprop:Generator_ColumnPropNameInTable="TenCNColumn" msprop:Generator_UserColumnName="TenCN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenServer" msprop:Generator_ColumnVarNameInTable="columnTenServer" msprop:Generator_ColumnPropNameInRow="TenServer" msprop:Generator_ColumnPropNameInTable="TenServerColumn" msprop:Generator_UserColumnName="TenServer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

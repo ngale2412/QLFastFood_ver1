@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyFastFood", "QuanLyFastFood\QuanLyFastFood.csproj", "{8CB06844-6BA6-4D93-9CB5-92946B32D98E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CB06844-6BA6-4D93-9CB5-92946B32D98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB06844-6BA6-4D93-9CB5-92946B32D98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB06844-6BA6-4D93-9CB5-92946B32D98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB06844-6BA6-4D93-9CB5-92946B32D98E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9524BB5F-A1DC-4ACA-97D9-BA47E704A320}
+	EndGlobalSection
+EndGlobal
