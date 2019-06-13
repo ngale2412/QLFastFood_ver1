@@ -75,9 +75,11 @@ namespace QuanLyFastFood
             myReader.Close();
             DBMain.conn.Close();
 
+            Program.frmChinh.MaNV.Text = "Mã NV: " + DBMain.username;
+            Program.frmChinh.HoTen.Text = "Họ tên: " + DBMain.mHoten;
+            Program.frmChinh.Nhom.Text = "Nhóm: " + DBMain.mGroup;
 
 
-           
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

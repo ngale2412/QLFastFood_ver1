@@ -65,10 +65,6 @@
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs" />
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyFastFoodDataSet.cs">
@@ -85,9 +81,6 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -122,43 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BL_Layer\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\2-cach-lam-banh-mousse-don-gian-ngot-mat-cho-ngay-he-22-jpeg.jpg" />
-    <Content Include="Resources\4-oz-Strawberry-Cheesecake.jpg" />
-    <Content Include="Resources\Actions-view-list-details-icon.png" />
-    <Content Include="Resources\add.png" />
-    <Content Include="Resources\bake.png" />
-    <Content Include="Resources\bakery.jpg" />
-    <Content Include="Resources\banh-macaron-1.jpg" />
-    <Content Include="Resources\Bookmark-add-icon.png" />
-    <Content Include="Resources\Button-Load-icon.png" />
-    <Content Include="Resources\cake.png" />
-    <Content Include="Resources\dark-blue-sky-3.png" />
-    <Content Include="Resources\delete.png" />
-    <Content Include="Resources\elizabeth_sadaharu.png" />
-    <Content Include="Resources\gintama___kanketsu_hen___yorozuya_yo___folder_icon_by_minacsky_saya-d8jsm37.png" />
-    <Content Include="Resources\info.png" />
-    <Content Include="Resources\key.png" />
-    <Content Include="Resources\key1.png" />
-    <Content Include="Resources\lock.png" />
-    <Content Include="Resources\Look-icon.png" />
-    <Content Include="Resources\m-c.jpg" />
-    <Content Include="Resources\macaron.jpg" />
-    <Content Include="Resources\pass.png" />
-    <Content Include="Resources\phone-icon.png" />
-    <Content Include="Resources\Save-as-icon.png" />
-    <Content Include="Resources\Save.png" />
-    <Content Include="Resources\Search-icon %281%29.png" />
-    <Content Include="Resources\Text-Edit-icon.png" />
-    <Content Include="Resources\tiramisu.png" />
-    <Content Include="Resources\totoro.png" />
-    <Content Include="Resources\totoro_b.png" />
-    <Content Include="Resources\update-icon.png" />
-    <Content Include="Resources\user-add-icon.png" />
-    <Content Include="Resources\user.png" />
-    <Content Include="Resources\user1.png" />
-    <Content Include="Resources\Zoom-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

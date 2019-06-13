@@ -13,7 +13,7 @@ namespace QuanLyFastFood
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        //public static string serverName;
+        public static frmMain frmChinh;
         [STAThread]
 
         static void Main()
@@ -23,12 +23,9 @@ namespace QuanLyFastFood
             
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-             Application.Run(new frmMain());
-            //Form frmChinh = new frmMain();
-            //Application.Run(frmChinh);
-            //Form frmChinh = new Form();
-            //frmChinh = new frmMain();
-            //Application.Run(frmChinh);
+            //Application.Run(new frmMain());
+            Form frmChinh = new frmMain();
+            Application.Run(frmChinh);
         }
     }
 }
