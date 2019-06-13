@@ -29,6 +29,7 @@ namespace QuanLyFastFood
             this.v_DS_PhanManhTableAdapter.Fill(this.quanLyFastFoodDataSet.V_DS_PhanManh);
             cbtenCN.SelectedIndex = 1;
             cbtenCN.SelectedIndex = 0;
+            DBMain.bds_dspm.DataSource = DS_PhanManh;
         }
 
         private void tenCN_Selected(object sender, EventArgs e)
@@ -49,14 +50,14 @@ namespace QuanLyFastFood
             DBMain.password = txtPass.Text;
 
             if (DBMain.KetNoi() == 0) return;
-           // MessageBox.Show("Đăng nhập thành công!", "Chúc mừng", MessageBoxButtons.OK);
+            MessageBox.Show("Đăng nhập thành công!", "Chúc mừng", MessageBoxButtons.OK);
 
             SqlDataReader myReader;
             DBMain.mChinhanh = cbtenCN.SelectedIndex;
             //DBMain.bds_dspm = ds;
 
-            //DBMain.mloginDN = DBMain.mlogin;
-            //DBMain.passwordDN = DBMain.password;
+            DBMain.mloginDN = DBMain.mlogin;
+            DBMain.passwordDN = DBMain.password;
 
             string strLenh = "exec sp_KiemTraDangNhap '" + DBMain.mlogin + "'";
             myReader = DBMain.ExecSqlDataReader(strLenh);//
@@ -79,8 +80,9 @@ namespace QuanLyFastFood
             Program.frmChinh.HoTen.Text = "Họ tên: " + DBMain.mHoten;
             Program.frmChinh.Nhom.Text = "Nhóm: " + DBMain.mGroup;
 
-
+            //Program.frmChinh.HienThiMenu();
         }
+
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
